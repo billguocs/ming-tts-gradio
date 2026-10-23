@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# App data: voice library and generation history
+/webui_data/

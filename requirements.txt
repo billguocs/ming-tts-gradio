@@ -1,0 +1,8 @@
+# Gradio-only dependencies for the Ming-3.0-tts workbench.
+# The model runtime (torch, torchaudio, transformers, ...) comes from the
+# Ming-3.0-tts repository: pip install -r <ming_root>/requirements.txt
+#
+# gradio 6 requires huggingface-hub>=1.16, while transformers 4.46.3 (pinned by
+# Ming-3.0-tts) requires huggingface-hub<1.0. Keep gradio on 5.x here.
+gradio==5.50.0
+huggingface-hub>=0.30,<1.0
